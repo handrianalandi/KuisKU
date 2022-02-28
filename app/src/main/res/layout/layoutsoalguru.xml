@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="8dp"
+    android:background="@drawable/customsoalbackground"
+    android:layout_margin="4dp"
+    >
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvNomorSoal"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:text="nomor"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <TextView
+        android:id="@+id/tvSoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="soal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvJawabanA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:maxWidth="250dp"
+        app:layout_constraintStart_toStartOf="@+id/tvSoal"
+        app:layout_constraintTop_toBottomOf="@+id/tvSoal" />
+
+    <TextView
+        android:id="@+id/tvJawabanB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:maxWidth="250dp"
+        app:layout_constraintStart_toStartOf="@+id/tvJawabanA"
+        app:layout_constraintTop_toBottomOf="@+id/tvJawabanA" />
+
+    <TextView
+        android:id="@+id/tvJawabanC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:maxWidth="250dp"
+        app:layout_constraintStart_toStartOf="@+id/tvJawabanB"
+        app:layout_constraintTop_toBottomOf="@+id/tvJawabanB" />
+
+    <TextView
+        android:id="@+id/tvJawabanD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:maxWidth="250dp"
+        app:layout_constraintStart_toStartOf="@+id/tvJawabanC"
+        app:layout_constraintTop_toBottomOf="@+id/tvJawabanC" />
+
+    <TextView
+        android:id="@+id/tvJawabanBenar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jawaban benar"
+        app:layout_constraintStart_toStartOf="@+id/tvJawabanD"
+        app:layout_constraintTop_toBottomOf="@+id/tvJawabanD" />
+
+    <ImageButton
+        android:id="@+id/ivEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.754"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        android:background="@drawable/customloginbutton"
+        android:padding="8dp"
+        />
+
+    <ImageButton
+        android:id="@+id/ivDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/customloginbutton"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivEdit"
+        app:layout_constraintStart_toEndOf="@+id/ivEdit"
+        app:layout_constraintTop_toTopOf="@+id/ivEdit"
+        app:layout_constraintVertical_bias="0.0"
+
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
